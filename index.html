@@ -13,15 +13,19 @@
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '370683965723485'); 
-    fbq('track', 'https://pensezen.my.canva.site/transformacao');
+    fbq('track', 'PageView');
+
+    window.onload = function() {
+      setTimeout(function() {
+        window.location.href = 'https://pensezen.my.canva.site/transformacao';
+      }, 100); // Atraso mínimo para garantir que o pixel seja carregado
+    };
   </script>
   <noscript>
     <img height="1" width="1" style="display:none"
-         src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"/>
+         src="https://www.facebook.com/tr?id=370683965723485&ev=PageView&noscript=1"/>
   </noscript>
-  <meta http-equiv="refresh" content="0; URL='https://pensezen.my.canva.site/transformacao'">
 </head>
 <body>
-  Redirecting...
 </body>
 </html>
